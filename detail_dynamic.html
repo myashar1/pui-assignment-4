@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Cabin|Pacifico|Sacramento" rel="stylesheet">
+        <title>Bun Bun Bake Shop</title>
+        <!-- styles -->
+        <link rel="stylesheet" type="text/css" href="resources//style.css">
+        <!-- javascript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="resources//main.js" type="text/javascript"></script>
+</head>
+
+
+<body>
+    <header>
+        <h2>Welcome to</h2>
+        <h1>Bun Bun Bake Shop!</h1>
+    </header>
+
+    <nav>
+        —<a href="index.html"><b>  HOME  </b></a>—
+        <a href="product.html"><b>  PRODUCTS  </b></a>—
+        <a href="contact.html"><b>  CONTACT  </b></a>—
+        <a href="shopping_cart.html"><b>  SHOPPING CART  </b></a>—
+    </nav>
+    <br>
+
+<!-- Dynamic Content here -->
+
+    <div class="container_main">
+        <h3 id="roll-name"> </h3>
+        <p id="roll-speak"></p>
+
+        <div id="roll" class="col3">
+            <img id="roll-img" src="">
+
+        </div>
+
+        <div id="roll2" class="col3">
+
+        <form name="myform">
+
+                <p> Choose your main roll flavor here: </p>
+
+                <select name="mydropdown1" id="flavorSelection">
+                    <option value="Maple">Maple Apple Pecan</option>
+                    <option value="Bacon">Bacon Bun</option>
+                    <option value="Walnut">Walnut Bun</option>
+                    <option value="GlutenFree">Gluten Free Bun</option>
+                    <option value="Original">Original Bun</option>
+                    <option value="Vegan">Original Vegan Bun</option>
+                    <option value="Pumpkin">Pumpkin Spice Bun</option>
+                    <option value="Pecan">Caramel Pecan Roll</option>
+                    <option value="Carrot">Carrot Cake Bun</option>
+                    <option value="Buttermilk">Buttermilk Bun</option>
+                    <option value="Strawberry">Strawberry Rhubarb</option>
+                    <option value="Birthday">Birthday Cake Bun</option>
+                    <option value="Lemon">Lemon Lavender</option>
+                    <option value="Cranberry">Cranberry Bun</option>
+                    <option value="Blackberry">Blackberry Bun</option>
+                </select>
+            <br>
+
+                <p> Choose the type of pack you want: </p>
+
+                <select name="mydropdown2" id=packSelection_number>
+                    <option value="Individual">Individual</option>
+                    <option value="SixPack">Six Pack</option>
+                    <option value="TwelvePack">Twelve Pack</option>
+                </select>
+
+            <p> Choose additional roll flavors in your pack here: </p>
+
+                <select name="mydropdown3" id=packSelection_type1>
+                    <option value="Maple">Maple Apple Pecan</option>
+                    <option value="Bacon">Bacon Bun</option>
+                    <option value="Walnut">Walnut Bun</option>
+                    <option value="GlutenFree">Gluten Free Bun</option>
+                    <option value="Original">Original Bun</option>
+                    <option value="Vegan">Original Vegan Bun</option>
+                    <option value="Pumpkin">Pumpkin Spice Bun</option>
+                    <option value="Pecan">Caramel Pecan Roll</option>
+                    <option value="Carrot">Carrot Cake Bun</option>
+                    <option value="Buttermilk">Buttermilk Bun</option>
+                    <option value="Strawberry">Strawberry Rhubarb</option>
+                    <option value="Birthday">Birthday Cake Bun</option>
+                    <option value="Lemon">Lemon Lavender</option>
+                    <option value="Cranberry">Cranberry Bun</option>
+                    <option value="Blackberry">Blackberry Bun</option>
+                </select>
+
+                <select name="mydropdown4" id=packSelection_type2>
+                    <option value="Maple">Maple Apple Pecan</option>
+                    <option value="Bacon">Bacon Bun</option>
+                    <option value="Walnut">Walnut Bun</option>
+                    <option value="GlutenFree">Gluten Free Bun</option>
+                    <option value="Original">Original Bun</option>
+                    <option value="Vegan">Original Vegan Bun</option>
+                    <option value="Pumpkin">Pumpkin Spice Bun</option>
+                    <option value="Pecan">Caramel Pecan Roll</option>
+                    <option value="Carrot">Carrot Cake Bun</option>
+                    <option value="Buttermilk">Buttermilk Bun</option>
+                    <option value="Strawberry">Strawberry Rhubarb</option>
+                    <option value="Birthday">Birthday Cake Bun</option>
+                    <option value="Lemon">Lemon Lavender</option>
+                    <option value="Cranberry">Cranberry Bun</option>
+                    <option value="Blackberry">Blackberry Bun</option>
+                </select>
+
+            <p> Quantity </p>
+                    <div class="quantity">
+                       <!-- <button class="delete-item"> - </button> -->
+                        <input type="text" id="quantityField" value="1">
+                        <!--  <button class="delete-item"> + </button> -->
+                    </div>
+        </form>
+        <br>
+        <br>
+
+            <button class="buttons" id=addToCartButton onclick="addToCart()">Add Item</button>
+
+        </div>
+
+    </div>
+    </div>
+    <br>
+
+
+    <footer> Copyright 2017 Bun Bun Bake Shop <br>
+        Located at 1234 Carb Central Way in beautiful Pittsburgh, PA
+    </footer>
+
+</body>
+
+</html>
